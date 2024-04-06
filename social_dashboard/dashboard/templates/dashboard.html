@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Dashboard</title>
+</head>
+<body>
+    <h1>Messages</h1>
+    <ul>
+        {% for message in messages %}
+            <li>{{ message.content }} - <small>{{ message.posted_at }}</small></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
